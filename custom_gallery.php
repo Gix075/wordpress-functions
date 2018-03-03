@@ -9,9 +9,9 @@
 */
 
 add_filter( 'use_default_gallery_style', '__return_false' );
-add_filter('post_gallery','customFormatGallery',10,2);
+add_filter('post_gallery','customPostGallery',10,2);
 
-function customFormatGallery($string,$attr){
+function customPostGallery($string,$attr){
 
     $posts = get_posts(array('include' => $attr['ids'],'post_type' => 'attachment'));
     $output = '<div class="WPTheme__gallery"><div class="row">';
