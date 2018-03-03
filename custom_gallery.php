@@ -4,6 +4,8 @@
 *   *********************************************
 *   Override default wordpress image gallery
 *   with your Bootstrap ready markup 
+*
+*   Place this function in your theme functions.php
 */
 
 add_filter( 'use_default_gallery_style', '__return_false' );
